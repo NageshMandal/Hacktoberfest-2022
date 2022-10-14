@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gal2.css">
+    <link rel="stylesheet" href="gal3.css">
+    <script src="gal.js"></script>
+    <title>Gallery Webpage</title>
+</head>
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">Glory Of India<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <!-- <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">AboutUS</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#reach">HowToReach</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">ContactUS</a></li>
+        </ul> -->
+    </header>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <div class="full-img" id="fullimgbox">
+        <img src="img1.jpg" id="fullimg">
+
+    </div>
+    <div class="img-gallary">
+       <a href="Guwahati1.jpg" data-lightbox="mygallary" data-title="Guwahati-Mountain Ranges"><img src="Guwahati1.jpg"></a> 
+        <a href="Guwahati2.jpg" data-lightbox="mygallary" data-title="Guwahati-Colorful Gateway"><img src="Guwahati2.jpg"></a>
+        <a href="Guwahati3.jpg" data-lightbox="mygallary" data-title="Guwahati-Brahmputra River"><img src="Guwahati3.jpg"></a>
+        <a href="Guwahati5.jpg" data-lightbox="mygallary" data-title="Guwahati-Steamer Boat in Brahmputra River"><img src="Guwahati5.jpg"></a>
+        <a href="Jaipur1.jpg" data-lightbox="mygallary" data-title="Jaipur-Hawa Mahal"><img src="Jaipur1.jpg"></a>
+        <a href="Jaipur2.jpg" data-lightbox="mygallary" data-title="Jaipur-City Palace Museum"><img src="Jaipur2.jpg"></a>
+        <a href="Jaipur3.jpg" data-lightbox="mygallary" data-title="Jaipur-Jal Mahal"><img src="Jaipur3.jpg"></a>
+        <a href="Jaipur4.jpg" data-lightbox="mygallary" data-title="Jaipur-Rajasthani Thali"><img src="Jaipur4.jpg"></a>
+        <a href="Jaipur5.jpg" data-lightbox="mygallary" data-title="Jaipur-Decorated Indian Elephant in front of Amber Fort Palace Jaipur Gateway."><img src="Jaipur5.jpg"></a>
+        <a href="Kochi1.jpg" data-lightbox="mygallary" data-title="Kochi-Panoramic River View and Cityscapes"><img src="Kochi1.jpg"></a>
+        <a href="Kochi2.jpg" data-lightbox="mygallary" data-title="Kochi-Traditional Indian Houseboat near Alleppey"><img src="Kochi2.jpg"></a>
+        <a href="Kochi3.jpg" data-lightbox="mygallary" data-title="Kochi-Seashore of Arabian sea"><img src="Kochi3.jpg"></a>
+        <a href="Kochi4.jpg" data-lightbox="mygallary" data-title="Kochi-A Boat in Muvattupuzha River"><img src="Kochi4.jpg"></a>
+        <a href="Kochi5.jpg" data-lightbox="mygallary" data-title="Kochi-House Boats near sea side"><img src="Kochi5.jpg"></a>
+        <a href="Manali1.jpeg" data-lightbox="mygallary" data-title="Manali-Local Resort"><img src="Manali1.jpeg"></a>
+        <a href="Manali2.jpeg" data-lightbox="mygallary" data-title="Manali-Tourist Enjoying in Snow"><img src="Manali2.jpeg"></a>
+        <a href="Manali3.jpeg" data-lightbox="mygallary" data-title="Manali-Himalaya covered with Ice"><img src="Manali3.jpeg"></a>
+        <a href="Guwahati4.jpg" data-lightbox="mygallary" data-title="Guwahati-Guwahati City View"><img src="Guwahati4.jpg"></a>
+        
+    
+    </div>
+</script>
+</body>
+</html>
