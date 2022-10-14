@@ -1,0 +1,9 @@
+button{
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color:yellowgreen  ;
+    transition: duration 4s;
+    border: #000 outset;
+
+}
