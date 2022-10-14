@@ -7,3 +7,7 @@ button{
     border: #000 outset;
 
 }
+button:hover{
+    background-color: deeppink;
+     color: white;
+}
