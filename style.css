@@ -1,3 +1,6 @@
+body{
+    
+}
 button{
     padding: 10px;
     border-radius: 10px;
@@ -9,5 +12,17 @@ button{
 }
 button:hover{
     background-color: deeppink;
-     color: white;
+    color: white;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 33%;
+    width: 50%;
 }
